@@ -59,7 +59,9 @@ public class BetterAppCompatRadioButton
                                       @AttrRes int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         mBackgroundTintHelper = new AppCompatBackgroundHelperProxy(this);
+        mBackgroundTintHelper.loadFromAttributes(attrs, defStyleAttr);
         mTextHelper = new AppCompatTextHelperProxy(this);
+        mTextHelper.loadFromAttributes(attrs, defStyleAttr);
     }
 
     @Override
